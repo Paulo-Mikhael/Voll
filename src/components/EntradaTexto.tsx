@@ -27,7 +27,7 @@ export function EntradaTexto({ label, placeholder, type = "text" }: IInput) {
           fontSize={16}
           fontWeight="bold"
         >
-          {label}
+          {label && label}
         </Text>
       </FormControl.Label>
       <Input

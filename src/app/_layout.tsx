@@ -9,7 +9,7 @@ export default function Layout() {
     <NativeBaseProvider theme={TEMAS}>
       <StatusBar
         backgroundColor={TEMAS.colors.blue[800]}
-      />
+        />
       <VStack flex={1} alignItems="center" justifyContent="center" paddingX={10}>
         <Slot />
       </VStack>

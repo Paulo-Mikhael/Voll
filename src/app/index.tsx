@@ -28,6 +28,9 @@ export default function Index() {
   function SignUp(){
     router.navigate('/cadastro/Cadastro');
   }
+  function SignIn(){
+    router.navigate('/tabs/Principal');
+  }
 
   return (
     <>
@@ -44,7 +47,7 @@ export default function Index() {
           />
         ))}
       </Box>
-      <Botao onPress={SignUp}>
+      <Botao onPress={SignIn}>
         Entrar
       </Botao>
       <Link href="https://alura.com.br">
@@ -66,7 +69,7 @@ export default function Index() {
         <Text marginRight={1}>
           Ainda não tem cadastro?
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={SignUp}>
           <Text color="blue.500">
             Faça seu cadastro!
           </Text>
